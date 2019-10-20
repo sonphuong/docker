@@ -444,7 +444,7 @@ You can now modify the .env file on the app container to include specific detail
 
 Open the file using docker-compose exec, which allows you to run specific commands in containers. In this case, you are opening the file for editing:
 
-docker-compose exec app nano .env
+docker-compose exec app vim .env
 Find the block that specifies DB_CONNECTION and update it to reflect the specifics of your setup. You will modify the following fields:
 
 DB_HOST will be your db database container.
